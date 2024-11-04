@@ -57,7 +57,7 @@ config CC_GCC_EXTRA_LIBSTDCXX
     bool "Re-enable libstdcxx"
     default n
     depends on LIBC_AVR_LIBC
-    select CC_CORE_PASS_2_NEEDED
+    select LIBC_AVR_BUILD_MAIN
     help
       libstdcxx is normally disabled on avr systems due to size limitations.
       Set this option to re-enable libstdcxx support.

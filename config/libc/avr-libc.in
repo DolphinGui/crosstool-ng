@@ -8,10 +8,14 @@
 ## select LIBC_SUPPORT_THREADS_NONE
 ## select OMIT_TARGET_VENDOR
 ## select TARGET_SKIP_CONFIG_SUB
+## select CC_CORE_NEEDED
 ##
 ## help The AVR Libc package provides a subset of the standard C library for
 ## help Atmel AVR 8-bit RISC microcontrollers. In addition, the library
 ## help provides the basic startup code needed by most applications.
+
+config LIBC_AVR_BUILD_MAIN
+    bool
 
 config LIBC_AVR_LIBC_EXTRA_CONFIG_ARRAY
     string
